@@ -1,8 +1,6 @@
+import ContectForm from "../components/contect/contect-form";
+
 const ContactPage = () => {
-  return (
-    <div>
-      <h1>Contact Page</h1>
-    </div>
-  );
+  return <ContectForm />;
 };
 export default ContactPage;
