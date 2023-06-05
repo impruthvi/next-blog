@@ -1,8 +1,9 @@
+
+import PostContent from "../../components/posts/post-detail/post-content";
+
 const SinglePostPage = (props) => {
   return (
-    <div>
-      <h1>The Single Post Page</h1>
-    </div>
+    <PostContent />
   );
 };
 
