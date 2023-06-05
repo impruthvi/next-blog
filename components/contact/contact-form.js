@@ -1,7 +1,7 @@
-import classes from "./contect-form.module.css";
+import classes from "./contact-form.module.css";
 import { useState, useEffect } from "react";
 
-const ContectForm = () => {
+const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -62,4 +62,4 @@ const ContectForm = () => {
   );
 };
 
-export default ContectForm;
+export default ContactForm;

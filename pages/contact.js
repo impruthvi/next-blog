@@ -1,6 +1,6 @@
-import ContectForm from "../components/contect/contect-form";
+import ContactForm from "../components/contact/contact-form";
 
 const ContactPage = () => {
-  return <ContectForm />;
+  return <ContactForm />;
 };
 export default ContactPage;
