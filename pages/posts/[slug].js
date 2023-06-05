@@ -1,10 +1,17 @@
-
+import { Fragment } from "react";
 import PostContent from "../../components/posts/post-detail/post-content";
 import { getPostData, getPostsFiles } from "../../lib/posts-util";
+import Head from "next/head";
 
 const SinglePostPage = ({ post }) => {
   return (
-    <PostContent post={post}/>
+    <Fragment>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+      </Head>
+      <PostContent post={post} />
+    </Fragment>
   );
 };
 
@@ -20,7 +27,6 @@ export function getStaticProps(context) {
     },
     revalidate: 600,
   };
-
 }
 
 export function getStaticPaths() {
@@ -32,6 +38,5 @@ export function getStaticPaths() {
     fallback: false,
   };
 }
-
 
 export default SinglePostPage;
